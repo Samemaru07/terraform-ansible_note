@@ -57,3 +57,6 @@ Ansibleには「エージェント」不要。
 
 ## ファイルの構成
 インストール → 設定ファイルの適用（Template） → サービスの起動設定（Systemd） → コンテンツの配置（Copy）
+
+## ブートストラップ問題
+Ansibleの性質で、**1プレイブック中はユーザが切り替わらない**のがあり、セキュリティ的に、インスタンス側でubuntuを締め出して、自作ユーザオンリーになったとしても、Ansibleはubuntuを使い続けるから、`This account is currently not available.`というエラーが出る。

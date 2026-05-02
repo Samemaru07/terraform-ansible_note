@@ -1,0 +1,12 @@
+- `/etc/nginx/nginx.conf`
+	- メイン設定。
+	- Nginx全体の動き (ログの出し方や処理能力) を決める。
+- `/etc/nginx/sites-available/`
+	- 設定の控室。
+	- いろんなサイトの設定ファイルを置いておく場所。
+- `/etc/nginx/sites-enabled/`
+	- 実行中の設定。
+	- ここにリンクがあるファイルだけが実際に動く。
+- `/var/www/html/`
+	- 展示場。
+	- ここに置いた`index.html`が世界に公開される。
